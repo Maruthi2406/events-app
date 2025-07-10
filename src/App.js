@@ -8,7 +8,7 @@ export default function App() {
   const [text, setText] = useState(true);
 
   function next() {
-    if (count < 5) setCount(count + 1);
+    if (count < 5) setCount((count) => count + 2);
   }
 
   function previous() {
